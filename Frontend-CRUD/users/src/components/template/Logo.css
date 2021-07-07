@@ -1,0 +1,15 @@
+aside.logo{ /*tag aside classename= logo*/
+    background-color: var(--bg-dark); /*puxando o valor de uma variavel criada*/
+    display: flex; /*display flex para entrar na tela com o tamanho da tela para fazer outras configurações*/
+    justify-content: center;/*centralizando o logo*/
+    align-items: center; /*centralizando conforme os itens*/
+}
+aside.logo img{ /*img do logo*/
+    padding: 0px 15px; /* distancia da borda*/ 
+    width: 80%; /*Largura da foto*/ 
+}
+@media(max-width: 576px){ /*utilizando  para quando a tela chegar a esse tamanho ele faça algumas modificações*/ 
+    aside.logo img{
+        width: 120px; /*logo ficar dessa largura*/
+    }
+}

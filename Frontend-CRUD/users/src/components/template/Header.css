@@ -1,0 +1,11 @@
+header.header{ /*tag header que tenha classe header*/
+    background-color: #FFF; /*cabeçalho branco*/
+    padding: 0px 15px; /*distancia das palavras para borda do menu*/
+    overflow: hidden;/* para ele ficar dentro da tag e não sair, colocado pra caso de segurança*/
+    white-space: nowrap;
+    box-shadow: var(--shadow);
+}
+
+header.header h1{
+    font-size: 1.8em; 
+}

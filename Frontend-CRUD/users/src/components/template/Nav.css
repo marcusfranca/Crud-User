@@ -1,0 +1,34 @@
+aside.menu-area{ /*tag aside para modificar ele*/
+    background-color: var(--bg-dark); /*utilizando uma variavel criada em outra classe onde já possui seu valores*/
+    box-shadow: 2px 0 10px 0 rgba(0, 0, 0, 0.12), /*sombra*/
+        2px 0 10px 0 rgba(0, 0, 0, 0.09);
+}
+
+.menu a{
+    display: block;/*cada link na sua linha*/
+    text-decoration: none; /*decoração desabilitada*/
+    color: #FFF; /*cor das letras */
+    font-weight: 300; /*quantidade de negrito ele vai ficar*/
+    padding: 20px;/*separando da borda um do outro*/
+}
+
+.menu a:hover{ /*quando passar o curso em cima do link vai ficar diferente*/
+    background: linear-gradient(135deg, #07a7e3 0%, #32dac3 100%);
+}
+
+@media(max-width: 768px){/*tamanho da tela, quando ela chegar nesse tamnho deve fazer essas alterações: */
+    .menu{ /*fazer ele ficar na vertical e n na orizontal*/
+        display: flex; /*menur ficar dentro do lay*/
+        justify-content: flex-start;/*os itens são embalados em direção a linha de início*/
+        align-items: center; /*itens ao center da pagina*/
+    }
+    .menu a{
+        display: inline;/*dentro do bloco na mesma linha.*/
+        padding: 10px;/*separação das bordas dos itens*/
+        margin: 0px; /*margin 0*/
+    }
+    .menu{ 
+        height: 100%;/*altura 100% da tela*/
+        justify-content: space-around;/*espaço entre os elementos*/
+    }
+}

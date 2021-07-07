@@ -1,0 +1,8 @@
+footer.footer{ /*tag footer de classe footer*/
+    display: flex; /*O layout flexível permite que os elementos responsivos dentro de um contêiner sejam organizados automaticamente, dependendo do tamanho da tela*/
+    align-items: center; /*aliar itens ao center*/
+    justify-content: flex-end;/*vai mover meu texto pro canto infeior direito*/
+    padding: 0 25px; /*separação da borda*/
+    background-color: #FFF;/*deixando a borda branca*/
+    box-shadow: var(--shadow);  /*utilizando um variavel que foi criada em outro lugar para usar o shadow que é a sombra*/
+ }
